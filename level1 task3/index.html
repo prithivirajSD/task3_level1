@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Temperature converter</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Temperature converter</h1>
+      <div class="form">
+       <div class="cel_fah">
+         <h2>Celsius</h2><br>
+         <input type="number" id="celsius" placeholder="Enter the number">
+        </div>
+        <div class="cel_fah">
+            <h2>Fahrenheit</h2><br><br>
+            <input type="number" id="fahrenheit" placeholder="Enter the number">
+        </div>
+      </div>
+    </div>
+
+    <script >
+
+let celsius = document.getElementById('celsius')
+let fahrenheit = document.getElementById('fahrenheit')
+
+celsius.oninput =() =>{
+    let output =(parseInt(celsius.value)*9)/5+32;
+    fahrenheit.value = parseInt(output);
+};
+fahrenheit.oninput =() =>{
+    let output =((parseInt(fahrenheit.value)-32)*5)/9;
+    celsius.value = parseInt(output);
+};
+    </script>
+</body>
+
+</html>

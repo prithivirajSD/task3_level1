@@ -1,0 +1,85 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&family=Amaranth:ital,wght@0,400;0,700;1,700&family=Handlee&family=Neucha&family=Quicksand:wght@500&family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;   
+}
+
+.container{
+    background-image: linear-gradient(90deg,#FFF7AD,#FFA9F9);
+    height: 745px;
+    width: 100%;
+}
+
+.container h1{
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    color: #737373;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.form{
+   height: 350px;
+   width: 400px;
+   position: relative;
+   top:22%;
+   left: 35%;
+   background-color: white;
+   border-radius: 30px; 
+}
+
+.cel_fah{
+   color: #5E17EB;
+   font-weight: bold;
+   block-size: 40%;
+   align-items: center;
+   text-align: center;
+   position: relative;
+   top: 30px;
+}
+
+.cel_fah h2{
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#fahrenheit {
+     position: absolute;
+     bottom: 30px;
+     right: 72px;
+     height: 55px;
+     width: 250px;
+     background-color: #5E17EB;
+}
+
+#celsius {
+    position: absolute;
+    bottom: 30px;
+    right: 72px;
+    height: 55px;
+    width: 250px;
+    background-color: #5E17EB;
+}
+
+input[type=number]{
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;}
+
+::placeholder {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 1;
+  }
+ 
